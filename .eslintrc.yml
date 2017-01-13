@@ -1,0 +1,11 @@
+env:
+  node: true
+  jest: true
+parser: babel-eslint
+extends:
+  - standard
+  - plugin:import/errors
+  - plugin:import/warnings
+plugins:
+  - standard
+  - promise

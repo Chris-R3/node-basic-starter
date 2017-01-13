@@ -1,0 +1,35 @@
+{
+  "name": "node-basic-starter",
+  "version": "1.0.0",
+  "description": "Basic node project template",
+  "author": "Christian Raidl",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf ./build/",
+    "prebuild": "npm run clean",
+    "build": "babel ./src --out-dir ./build --source-maps",
+    "lint": "eslint ./src",
+    "test": "jest --config ./jest.config.json",
+    "start": "node ./build",
+    "start:dev": "nodemon --exec babel-node ./src --watch ./src"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-export-extensions": "^6.8.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-stage-3": "^6.17.0",
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "jest": "^18.1.0",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.5.4"
+  }
+}
