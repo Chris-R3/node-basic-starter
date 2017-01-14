@@ -11,6 +11,7 @@
     "build": "babel ./src --out-dir ./build --source-maps",
     "lint": "eslint ./src",
     "test": "jest --config ./jest.config.json",
+    "test:watch": "jest --watch --config ./jest.config.json",
     "start": "node ./build",
     "start:dev": "nodemon --exec babel-node ./src --watch ./src"
   },
